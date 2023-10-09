@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Học Viện Phần Mềm</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Themesdesign" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+    <!-- Material Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.4.55/css/materialdesignicons.min.css"
+      integrity="sha512-6ftzZvH15uxye8mFPuNyF/2F8ESEWElTVS6G9S7YD+cdHRlxZQeEV8Mn+YOma5BWJiEzeM0g9vhH7hbzFkQuvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tinyslider -->
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+
+    <!-- Custom  sCss -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      :root {
+        --uim-primary-opacity: 1;
+        --uim-secondary-opacity: 0.7;
+        --uim-tertiary-opacity: 0.5;
+        --uim-quaternary-opacity: 0.25;
+        --uim-quinary-opacity: 0;
+      }
+      .uim-svg {
+        display: inline-block;
+        height: 1em;
+        vertical-align: -0.125em;
+        font-size: inherit;
+        fill: var(--uim-color, currentColor);
+      }
+      .uim-svg svg {
+        display: inline-block;
+      }
+      .uim-primary {
+        opacity: var(--uim-primary-opacity);
+      }
+      .uim-secondary {
+        opacity: var(--uim-secondary-opacity);
+      }
+      .uim-tertiary {
+        opacity: var(--uim-tertiary-opacity);
+      }
+      .uim-quaternary {
+        opacity: var(--uim-quaternary-opacity);
+      }
+      .uim-quinary {
+        opacity: var(--uim-quinary-opacity);
+      }
+    </style>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="58">
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <img
+            src="images/logo-light.png"
+            alt=""
+            class="logo-light"
+            height="20"
+          />
+          <img
+            src="images/logo-dark.png"
+            alt=""
+            class="logo-dark"
+            height="20"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active" id="scrollElement"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#clients" class="nav-link">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-info btn-sm navbar-btn my-lg-0 my-2"
+            >Try it Free</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero section Start -->
+    <section
+      class="hero-3 position-relative align-items-center justify-content-center d-flex overflow-hidden"
+      style="background-image: url(images/hero-3-bg.jpg)"
+      id="home"
+    >
+      <div class="bg-overlay"></div>
+      <div class="container">
+        <div
+          class="row position-relative align-items-center justify-content-center"
+        >
+          <div class="col-lg-8">
+            <div class="hero-3-content text-center py-5 px-4 mt-4">
+              <span class="con-border-top"></span>
+              <h1 class="hero-3-title text-white mb-lg-3 mb-2">
+                THÔNG BÁO KHÓA HỌC
+              </h1>
+              <h6 class="text-white text-uppercase mt-3 mb-2">
+                Khóa học tích hợp lập trình thực chiến tân tiến 2023-2024
+              </h6>
+              <p class="mb-4 text-white-50">
+                Khóa học bao gồm 3 buổi miễn phí <br />
+                Giảng viên tâm huyết, chuyên nghiệp
+              </p>
+              <span class="con-border-bottom"></span>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- Hero section End -->
+
+    <!-- Start About -->
+    <section class="section bg-light" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="text-center mb-5">
+              <h3 class="mb-3 text-uppercase">Bạn có thể làm gì?</h3>
+              <p class="text-muted">
+                Đây chỉ là một số điều bạn có thể làm khi tham gia vào khóa học
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="text-center p-4">
+              <div class="icons-xl mb-3">
+                <span class="uim-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    preserveAspectRatio="none"
+                    viewBox="0 0 24 24"
+                    class=""
+                  >
+                    <path
+                      d="M7.97,16L5,19C4.67,19.3 4.23,19.5 3.75,19.5A1.75,1.75 0 0,1 2,17.75V17.5L3,10.12C3.21,7.81 5.14,6 7.5,6H16.5C18.86,6 20.79,7.81 21,10.12L22,17.5V17.75A1.75,1.75 0 0,1 20.25,19.5C19.77,19.5 19.33,19.3 19,19L16.03,16H7.97M7,8V10H5V11H7V13H8V11H10V10H8V8H7M16.5,8A0.75,0.75 0 0,0 15.75,8.75A0.75,0.75 0 0,0 16.5,9.5A0.75,0.75 0 0,0 17.25,8.75A0.75,0.75 0 0,0 16.5,8M14.75,9.75A0.75,0.75 0 0,0 14,10.5A0.75,0.75 0 0,0 14.75,11.25A0.75,0.75 0 0,0 15.5,10.5A0.75,0.75 0 0,0 14.75,9.75M18.25,9.75A0.75,0.75 0 0,0 17.5,10.5A0.75,0.75 0 0,0 18.25,11.25A0.75,0.75 0 0,0 19,10.5A0.75,0.75 0 0,0 18.25,9.75M16.5,11.5A0.75,0.75 0 0,0 15.75,12.25A0.75,0.75 0 0,0 16.5,13A0.75,0.75 0 0,0 17.25,12.25A0.75,0.75 0 0,0 16.5,11.5Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+
+              <h5>Phát triển Game</h5>
+              <p class="text-muted">
+                Với Java, bạn có thể tạo ra và phát triển Game như một Game
+                Developer thực sự
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="text-center p-4">
+              <div class="icons-xl mb-3">
+                <span class="uim-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 52 52"
+                    enable-background="new 0 0 52 52"
+                    xml:space="preserve"
+                  >
+                    <g display="none">
+                      <path
+                        display="inline"
+                        opacity="0.2"
+                        enable-background="new"
+                        d="M0,0v52h52V0H0z M49.9,49.9H2.1V2.1h47.8   C49.9,2.1,49.9,49.9,49.9,49.9z"
+                      />
+                    </g>
+                    <g display="none">
+                      <rect
+                        x="2"
+                        y="2"
+                        display="inline"
+                        fill="none"
+                        stroke-width="0.25"
+                        stroke-miterlimit="10"
+                        width="48"
+                        height="48"
+                      />
+                    </g>
+                    <g display="none">
+                      <g display="inline" opacity="0.5">
+                        <line
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          x1="50"
+                          y1="2"
+                          x2="2"
+                          y2="50"
+                        />
+                        <line
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          x1="2"
+                          y1="2"
+                          x2="49.9"
+                          y2="50"
+                        />
+                        <rect
+                          x="2"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="4"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="6"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="8"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="10"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="12"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="14"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="16"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="18"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="20"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="22"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="24"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="26"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="28"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="30"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="32"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="34"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="36"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="38"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="40"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="42"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="44"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="46"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="48"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="2"
+                          height="48"
+                        />
+                        <rect
+                          x="2"
+                          y="48"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="46"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="44"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="42"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="40"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="38"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="36"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="34"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="32"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="30"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="28"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="26"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="24"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="22"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="20"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="18"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="16"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="14"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="12"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="10"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="8"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="6"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="4"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                        <rect
+                          x="2"
+                          y="2"
+                          fill="none"
+                          stroke-width="0.25"
+                          stroke-miterlimit="10"
+                          width="48"
+                          height="2"
+                        />
+                      </g>
+                    </g>
+                    <path
+                      d="M50,20.5c0-1.2-1-2.2-2.2-2.2H33.7c-1.2,0-2.2,1-2.2,2.2v23.7c0,1.2,1,2.2,2.2,2.2h14.1c1.2,0,2.2-1,2.2-2.2  V20.5z"
+                    />
+                    <g>
+                      <path
+                        d="M27.7,29.4H8.4c-0.7,0-1.3-0.7-1.3-1.3V11.9c0-0.7,0.7-1.3,1.3-1.3h28.1c0.7,0,1.3,0.7,1.3,1.3v2.5h5.1V9   c0-1.8-1.6-3.4-3.4-3.4H5.4C3.6,5.6,2,7.2,2,9v22.2c0,1.8,1.6,3.4,3.4,3.4h22.3V29.4z"
+                      />
+                      <path
+                        d="M27.7,44.2v-3h-1.9c-0.5,0-0.9-0.4-0.9-0.9v-1.7c0-0.5-0.4-0.9-0.9-0.9h-3.4c-0.5,0-0.9,0.4-0.9,0.9v1.7   c0,0.5-0.4,0.9-0.9,0.9h-2.6c-1.8,0-3.4,1.6-3.4,3.4V45c0,0.7,0.7,1.3,1.3,1.3h14.1C27.8,45.7,27.7,45,27.7,44.2z"
+                      />
+                    </g>
+                    <circle cx="40.8" cy="43.8" r="1.6" />
+                    <path
+                      d="M46.7,40.2c0,0.4-0.4,0.9-0.9,0.9H35.6c-0.4,0-0.9-0.4-0.9-0.9V23.5c0-0.4,0.4-0.9,0.9-0.9h10.2  c0.4,0,0.9,0.4,0.9,0.9V40.2z"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <h5>Xây dựng Website</h5>
+              <p class="text-muted">
+                Bạn có thể lên ý tưởng xây dựng Website như một Developer chuyên
+                nghiệp. Chỉnh sửa và hoàn thiện Website đẹp mắt với độ bảo mật
+                cao phục vụ cho công việc
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="text-center p-4">
+              <div class="icons-xl mb-3">
+                <span class="uim-svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:serif="http://www.serif.com/"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 64 64"
+                    style="
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      stroke-linejoin: round;
+                      stroke-miterlimit: 2;
+                    "
+                    version="1.1"
+                    xml:space="preserve"
+                  >
+                    <g id="ICON">
+                      <path
+                        d="M27.001,37.914c-6.509,-0.1 -12.855,-0.403 -19.337,-0.911c-0.06,-0.005 -0.278,-0.003 -0.328,-0.003c-1.011,0 -2.021,0.656 -2.78,1.939c-0.875,1.481 -1.47,3.866 -1.47,6.561c0,2.695 0.595,5.08 1.47,6.561c0.759,1.283 1.769,1.939 2.78,1.939c0.05,0 0.323,0.001 0.412,-0.013c6.464,-1.061 12.78,-1.719 19.252,-1.948l0,7.961c0,0.379 0.214,0.725 0.553,0.894c0.339,0.17 0.744,0.133 1.047,-0.094l3.4,-2.55c-0,-0 3.4,2.55 3.4,2.55c0.303,0.227 0.708,0.264 1.047,0.094c0.339,-0.169 0.553,-0.515 0.553,-0.894l0,-7.958c6.457,0.232 12.903,0.889 19.338,1.945c0.089,0.014 0.362,0.013 0.412,0.013c1.012,0 2.021,-0.656 2.78,-1.939c0.875,-1.481 1.47,-3.866 1.47,-6.561c0,-2.695 -0.595,-5.08 -1.47,-6.561c-0.759,-1.283 -1.768,-1.939 -2.78,-1.939c-0.05,0 -0.268,-0.002 -0.328,0.003c-6.454,0.506 -12.929,0.809 -19.423,0.91c-0.046,-1.617 -1.371,-2.913 -2.999,-2.913l-4,-0c-1.628,0 -2.953,1.297 -2.999,2.914Zm7.999,12.241c-0.874,0.536 -1.901,0.845 -3,0.845c-1.099,-0 -2.126,-0.309 -3,-0.845l0,7.845l2.4,-1.8c0.356,-0.267 0.844,-0.267 1.2,-0c-0,-0 2.4,1.8 2.4,1.8l0,-7.845Zm21.75,-11.155c0.426,0 0.739,0.417 1.058,0.957c0.738,1.249 1.192,3.27 1.192,5.543c0,2.273 -0.454,4.294 -1.192,5.543c-0.319,0.54 -0.632,0.957 -1.058,0.957c-0.426,0 -0.739,-0.417 -1.058,-0.957c-0.738,-1.249 -1.192,-3.27 -1.192,-5.543c0,-2.273 0.454,-4.294 1.192,-5.543c0.319,-0.54 0.632,-0.957 1.058,-0.957Zm-49.414,0c0.426,0 0.739,0.417 1.058,0.957c0.738,1.249 1.192,3.27 1.192,5.543c0,2.273 -0.454,4.294 -1.192,5.543c-0.319,0.54 -0.632,0.957 -1.058,0.957c-0.426,0 -0.739,-0.417 -1.058,-0.957c-0.738,-1.249 -1.192,-3.27 -1.192,-5.543c0,-2.273 0.454,-4.294 1.192,-5.543c0.319,-0.54 0.632,-0.957 1.058,-0.957Zm46.488,0.201c-5.593,0.388 -11.201,0.625 -16.824,0.712l-0,2.497c0.477,0.838 0.75,1.808 0.75,2.84c0,1.032 -0.273,2.002 -0.75,2.84l0,1.951c5.575,0.198 11.141,0.707 16.699,1.514c-0.725,-1.489 -1.199,-3.649 -1.199,-6.055c0,-2.541 0.529,-4.807 1.324,-6.299Zm-43.561,0c0.794,1.492 1.323,3.758 1.323,6.299c0,2.406 -0.474,4.564 -1.198,6.054c5.549,-0.811 11.023,-1.321 16.612,-1.516l0,-1.948c-0.477,-0.838 -0.75,-1.808 -0.75,-2.84c0,-1.032 0.273,-2.002 0.75,-2.84l-0,-2.496c-5.637,-0.086 -11.153,-0.323 -16.737,-0.713Zm21.737,2.299c2.07,-0 3.75,1.68 3.75,3.75c0,2.07 -1.68,3.75 -3.75,3.75c-2.07,-0 -3.75,-1.68 -3.75,-3.75c0,-2.07 1.68,-3.75 3.75,-3.75Zm3,-1.155l-0,-2.345c0,-0.552 -0.448,-1 -1,-1c-0,0 -4,-0 -4,0c-0.552,0 -1,0.448 -1,1l-0,2.345c0.874,-0.536 1.901,-0.845 3,-0.845c1.099,-0 2.126,0.309 3,0.845Zm-21,-24.738l-0,10.352c0,0.014 0,0.027 0.001,0.041l-1.001,-0c-0.552,-0 -1,0.448 -1,1l0,6.5c0,0.552 0.448,1 1,1l4,-0c0.552,-0 1,-0.448 1,-1l0,-6.5c0,-0.552 -0.448,-1 -1,-1l-1.001,-0c0.001,-0.014 0.001,-0.027 0.001,-0.041l-0,-9.261l3.001,1.637c-0.001,0.016 -0.001,0.032 -0.001,0.048l-0,9.612c-0,1.383 0.945,2.587 2.288,2.915l10.492,2.561c0.156,0.039 0.319,0.039 0.475,0c-0,0 7.231,-1.77 10.459,-2.561c1.342,-0.328 2.286,-1.532 2.286,-2.914c-0,-3.078 -0,-9.613 -0,-9.613c0,-0.023 -0.001,-0.046 -0.002,-0.069l5.981,-3.262c0.321,-0.176 0.521,-0.512 0.521,-0.878c0,-0.366 -0.2,-0.703 -0.521,-0.878l-18.52,-10.102c-0.299,-0.163 -0.659,-0.163 -0.958,0l-18.52,10.102c-0.321,0.175 -0.521,0.512 -0.521,0.878c-0,0.366 0.2,0.702 0.521,0.878l1.019,0.555Zm2,12.393l0,4.5c0,-0 -2,0 -2,0c0,0 0,-4.5 0,-4.5l2,-0Zm1.382,-14.826l9.547,-0c0.552,-0 1,0.448 1,1c0,0.552 -0.448,1 -1,1l-9.547,-0l14.598,7.963l2.646,-1.444c0.485,-0.264 1.093,-0.085 1.357,0.399c0.264,0.485 0.085,1.093 -0.399,1.357l-3.125,1.704c-0.299,0.163 -0.659,0.163 -0.958,0l-10.501,-5.727l-0,8.569c-0,0.461 0.315,0.862 0.763,0.972c-0,-0 10.253,2.504 10.253,2.504l10.222,-2.503c0.447,-0.11 0.762,-0.511 0.762,-0.972l-0,-8.592l-4.408,2.404c-0.485,0.265 -1.093,0.086 -1.357,-0.399c-0.264,-0.484 -0.086,-1.092 0.399,-1.356c-0,-0 10.778,-5.879 10.778,-5.879c-0,-0 -16.432,-8.963 -16.432,-8.963l-14.598,7.963Z"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+
+              <h5>Song bằng Quốc tế</h5>
+              <p class="text-muted">
+                Mở các khóa học Tiếng Anh miễn phí để phục vụ việc học và làm
+                việc
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end About -->
+
+    <!-- Start Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center title mb-5">
+              <p class="text-muted text-uppercase fw-normal mb-2">Features</p>
+              <h3 class="mb-3">TỪ ZERO TRỞ THÀNH "CODER"</h3>
+              <div class="title-icon position-relative">
+                <div class="position-relative">
+                  <span class="uim-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        class="uim-primary"
+                        d="M7.293,12.707l3.99969,3.9997a1.00354,1.00354,0,0,0,1.41468,0L16.707,12.707A.99989.99989,0,0,0,15.293,11.293L13,13.58594V8a1,1,0,0,0-2,0v5.58594L8.707,11.293A.99989.99989,0,0,0,7.293,12.707Z"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M12,22A10,10,0,1,0,2,12,10.01114,10.01114,0,0,0,12,22ZM7.293,11.293a.99963.99963,0,0,1,1.41406,0L11,13.58594V8a1,1,0,0,1,2,0v5.58594l2.293-2.293A.99989.99989,0,0,1,16.707,12.707l-3.99969,3.9997a1.00354,1.00354,0,0,1-1.41468,0L7.293,12.707A.99962.99962,0,0,1,7.293,11.293Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row align-items-center">
+          <div class="col-lg-5 order-2 order-lg-1">
+            <div class="mt-4 mt-lg-0">
+              <h4>Lộ trình đào tạo bài bản và đầy đủ nhất</h4>
+              <p class="text-muted mt-3">
+                Bạn đang mong muốn chuyển ngành, có một công việc tốt hơn và mức
+                lương cao hơn.
+              </p>
+
+              <div>
+                <p class="mb-2 text-muted">
+                  <span class="uim-icon-info me-2 align-middle">
+                    <span class="uim-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          class="uim-primary"
+                          d="M10.3125,16.09375a.99676.99676,0,0,1-.707-.293L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328l-6.1875,6.1875A.99676.99676,0,0,1,10.3125,16.09375Z"
+                          opacity=".99"
+                        ></path>
+                        <path
+                          class="uim-tertiary"
+                          d="M12,2A10,10,0,1,0,22,12,10.01146,10.01146,0,0,0,12,2Zm5.207,7.61328-6.1875,6.1875a.99963.99963,0,0,1-1.41406,0L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                  Donec vitae sapien ut
+                </p>
+                <p class="mb-2 text-muted">
+                  <span class="uim-icon-info me-2 align-middle">
+                    <span class="uim-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          class="uim-primary"
+                          d="M10.3125,16.09375a.99676.99676,0,0,1-.707-.293L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328l-6.1875,6.1875A.99676.99676,0,0,1,10.3125,16.09375Z"
+                          opacity=".99"
+                        ></path>
+                        <path
+                          class="uim-tertiary"
+                          d="M12,2A10,10,0,1,0,22,12,10.01146,10.01146,0,0,0,12,2Zm5.207,7.61328-6.1875,6.1875a.99963.99963,0,0,1-1.41406,0L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                  In enim justo, rhoncus imperdiet
+                </p>
+                <p class="text-muted">
+                  <span class="uim-icon-info me-2 align-middle">
+                    <span class="uim-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          class="uim-primary"
+                          d="M10.3125,16.09375a.99676.99676,0,0,1-.707-.293L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328l-6.1875,6.1875A.99676.99676,0,0,1,10.3125,16.09375Z"
+                          opacity=".99"
+                        ></path>
+                        <path
+                          class="uim-tertiary"
+                          d="M12,2A10,10,0,1,0,22,12,10.01146,10.01146,0,0,0,12,2Zm5.207,7.61328-6.1875,6.1875a.99963.99963,0,0,1-1.41406,0L6.793,12.98828A.99989.99989,0,0,1,8.207,11.57422l2.10547,2.10547L15.793,8.19922A.99989.99989,0,0,1,17.207,9.61328Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                  Maecenas nec odio et
+                </p>
+              </div>
+              <div class="mt-4">
+                <a href="#" class="text-primary">Learn more..</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 ms-lg-auto col-sm-8 order-1 order-lg-2">
+            <div>
+              <img
+                src="images/features/feature-1.svg"
+                alt=""
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <hr class="my-5" />
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-8">
+            <div class="features-img mt-4">
+              <img
+                src="images/features/feature-2.svg"
+                alt=""
+                class="img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-5 ms-lg-auto">
+            <div class="mt-5 mt-lg-4">
+              <h4>Đào tạo kiến thức - kỹ năng thực chiến</h4>
+              <p class="text-muted mb-2 mt-3">
+                Với mô hình cải tiến vượt trội - chú trọng nâng cao kỹ năng thực
+                hành
+              </p>
+              <p class="text-muted">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur velit
+              </p>
+              <div class="mt-4">
+                <a href="#" class="text-primary">Learn more..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- End Features -->
+
+    <!-- Start: Team members -->
+    <section id="aboutMember" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title text-center">
+              <h3>ĐỘI NGŨ GIẢNG VIÊN KINH NGHIỆM</h3>
+              <p class="text-muted fw-normal mb-2">
+                Là những lập trình viên kì cực, những người....
+              </p>
+            </div>
+          </div>
+
+          <!-- team carousel -->
+          <div class="team-members">
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img1.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Mary, CEO</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img2.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Jack, Founder</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img3.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Linda, Manager</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img4.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Mary, CEO</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img5.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Mary, CEO</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+            <div class="item col-lg-3 col-sm-6">
+              <div class="team-thumb">
+                <div class="image-holder">
+                  <img
+                    src="images/team-img6.jpg"
+                    class="img-responsive img-circle"
+                    alt="Mary"
+                  />
+                </div>
+                <h2 class="heading">Mary, CEO</h2>
+                <p class="description">
+                  Aliquam ac justo est. Praesent feugiat cursus est.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- end team carousel -->
+        </div>
+      </div>
+    </section>
+    <!-- End: Team members -->
+
+    <!-- Start Clients -->
+    <section class="section" id="clients">
+      <div class="container">
+        <div class="row pb-5 align-items-center">
+          <div class="col-lg-4 col-md-4">
+            <div class="icons-lg mb-4">
+              <span class="uim-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    class="uim-primary"
+                    d="M17,13H7a1,1,0,0,1,0-2H17a1,1,0,0,1,0,2Z"
+                  ></path>
+                  <path
+                    class="uim-tertiary"
+                    d="M12,2A10.00082,10.00082,0,0,0,4.25684,18.3291L2.293,20.293A.99991.99991,0,0,0,3,22h9A10,10,0,0,0,12,2ZM9,7h6a1,1,0,0,1,0,2H9A1,1,0,0,1,9,7Zm6,10H9a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Zm2-4H7a1,1,0,0,1,0-2H17a1,1,0,0,1,0,2Z"
+                  ></path>
+                  <path
+                    class="uim-primary"
+                    d="M15 17H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM15 9H9A1 1 0 0 1 9 7h6a1 1 0 0 1 0 2z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <h3 class="mb-2">2,200<sup>+</sup></h3>
+            <h3 class="mb-4">Satisfied Clients</h3>
+            <p class="text-muted mb-sm-0 mb-5 pb-sm-0 pb-4">
+              If several languages coalesce, the grammar of the resulting
+              language is more simple and regular than that of the individual
+            </p>
+          </div>
+
+          <div class="col-lg-8 col-md-8">
+            <div class="tns-outer" id="tns1-ow">
+              <div
+                class="tns-liveregion tns-visually-hidden"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                slide <span class="current">7 to 8</span> of 3
+              </div>
+              <div id="tns1-mw" class="tns-ovh">
+                <div class="tns-inner" id="tns1-iw">
+                  <div
+                    class="client-slider tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal"
+                    id="tns1"
+                    style="
+                      transform: translate3d(-54.5455%, 0px, 0px);
+                      transition-duration: 0s;
+                    "
+                  >
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " If several It will be as simple as Occidental; it
+                          will be Occidental. To an English person, it will seem
+                          like simplified, If several languages of the resulting
+                          language "
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Alfredo Williams</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " It will be as simple as Occidental; in fact, it will
+                          be Occidental. To an English person, it will seem like
+                          simplified, If several languages of the resulting
+                          language"
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">James Vazquez</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " To achieve this, it would be necessary to have
+                          uniform grammar, pronunciation and more common words.
+                          If several languages of the resulting language."
+                        </p>
+
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Clara Searcy</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " If several It will be as simple as Occidental; it
+                          will be Occidental. To an English person, it will seem
+                          like simplified, If several languages of the resulting
+                          language "
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Alfredo Williams</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item"
+                      id="tns1-item0"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " It will be as simple as Occidental; in fact, it will
+                          be Occidental. To an English person, it will seem like
+                          simplified, If several languages of the resulting
+                          language"
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">James Vazquez</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item"
+                      id="tns1-item1"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " To achieve this, it would be necessary to have
+                          uniform grammar, pronunciation and more common words.
+                          If several languages of the resulting language."
+                        </p>
+
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Clara Searcy</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tns-item tns-slide-active" id="tns1-item2">
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " If several It will be as simple as Occidental; it
+                          will be Occidental. To an English person, it will seem
+                          like simplified, If several languages of the resulting
+                          language "
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Alfredo Williams</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tns-item tns-slide-cloned tns-slide-active">
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " It will be as simple as Occidental; in fact, it will
+                          be Occidental. To an English person, it will seem like
+                          simplified, If several languages of the resulting
+                          language"
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">James Vazquez</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " To achieve this, it would be necessary to have
+                          uniform grammar, pronunciation and more common words.
+                          If several languages of the resulting language."
+                        </p>
+
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Clara Searcy</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " If several It will be as simple as Occidental; it
+                          will be Occidental. To an English person, it will seem
+                          like simplified, If several languages of the resulting
+                          language "
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">Alfredo Williams</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tns-item tns-slide-cloned"
+                      aria-hidden="true"
+                      tabindex="-1"
+                    >
+                      <div class="bg-light rounded p-4">
+                        <p class="text-muted mb-4">
+                          " It will be as simple as Occidental; in fact, it will
+                          be Occidental. To an English person, it will seem like
+                          simplified, If several languages of the resulting
+                          language"
+                        </p>
+                        <div class="pt-3">
+                          <div class="d-inline-block">
+                            <h5 class="font-16 mb-1">James Vazquez</h5>
+                            <span class="text-muted">- Peyso User</span>
+                          </div>
+                          <div class="text-muted d-inline-block float-end">
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                            <i class="mdi mdi-star text-warning"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <!-- start brand logo -->
+        <div class="row mt-5">
+          <div class="col-lg-3 col-sm-3">
+            <div class="client-images">
+              <img
+                src="images/clients/1.png"
+                alt="client-img"
+                class="mx-auto img-fluid d-block"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="client-images">
+              <img
+                src="images/clients/3.png"
+                alt="client-img"
+                class="mx-auto img-fluid d-block"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="client-images">
+              <img
+                src="images/clients/4.png"
+                alt="client-img"
+                class="mx-auto img-fluid d-block"
+              />
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="client-images">
+              <img
+                src="images/clients/6.png"
+                alt="client-img"
+                class="mx-auto img-fluid d-block"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- End Clients -->
+
+    <!-- Start cta section -->
+    <section class="py-5 bg-primary">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <div class="text-white-50">
+              <h3 class="text-white">Build your dream website today</h3>
+              <p class="mb-0 fs-6">
+                If several languages coalesce, the grammar of the resulting
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mt-4 mt-md-0 text-md-end">
+              <a href="#" class="btn btn-info">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- End cta section -->
+
+    <!-- Start pricing -->
+    <section class="section bg-light" id="pricing">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center title mb-5">
+              <p class="text-muted text-uppercase fw-normal mb-2">Plan</p>
+              <h3 class="mb-3">Our Pricing</h3>
+              <div class="title-icon position-relative">
+                <div class="position-relative">
+                  <span class="uim-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        class="uim-primary"
+                        d="M7.293,12.707l3.99969,3.9997a1.00354,1.00354,0,0,0,1.41468,0L16.707,12.707A.99989.99989,0,0,0,15.293,11.293L13,13.58594V8a1,1,0,0,0-2,0v5.58594L8.707,11.293A.99989.99989,0,0,0,7.293,12.707Z"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M12,22A10,10,0,1,0,2,12,10.01114,10.01114,0,0,0,12,22ZM7.293,11.293a.99963.99963,0,0,1,1.41406,0L11,13.58594V8a1,1,0,0,1,2,0v5.58594l2.293-2.293A.99989.99989,0,0,1,16.707,12.707l-3.99969,3.9997a1.00354,1.00354,0,0,1-1.41468,0L7.293,12.707A.99962.99962,0,0,1,7.293,11.293Z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row pb-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card plan-box text-center p-2">
+              <div class="card-body">
+                <div class="icons-xl pt-4">
+                  <span class="uim-svg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        class="uim-quaternary"
+                        d="M20.23,7.24L12,12L3.77,7.24c0.16898-0.29248,0.40995-0.53689,0.7-0.71L11,2.76c0.62072-0.35004,1.37928-0.35004,2,0l6.53,3.77C19.82005,6.70311,20.06102,6.94752,20.23,7.24z"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M12,12v9.5c-0.31529-0.00043-0.6264-0.07223-0.91-0.21L4.5,17.48c-0.61772-0.35735-0.99865-1.01637-1-1.73v-7.5c0.00166-0.35428,0.09466-0.70215,0.27-1.01L12,12z"
+                      ></path>
+                      <path
+                        class="uim-primary"
+                        d="M20.5,8.25v7.5c-0.00135,0.71363-0.38228,1.37265-1,1.73l-6.62,3.82c-0.27531,0.12984-0.57562,0.1981-0.88,0.2V12l8.23-4.76C20.40534,7.54785,20.49834,7.89572,20.5,8.25z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <h4 class="mt-4">Economy</h4>
+
+                <div class="plan-features text-muted mt-5">
+                  <p>
+                    Storage : <span class="text-info fw-semibold">10 GB</span>
+                  </p>
+                  <p>
+                    Bandwidth :
+                    <span class="text-info fw-semibold">500 GB</span>
+                  </p>
+                  <p>Domain : <span class="text-info fw-semibold">No</span></p>
+                  <p>Support : <span class="text-info fw-semibold">No</span></p>
+                </div>
+
+                <div class="mt-5">
+                  <h3>
+                    <sup><small>$</small></sup
+                    >19 / <span class="font-16 text-muted">Month</span>
+                  </h3>
+                  <div class="mt-4 mb-4 d-none">
+                    <a href="#" class="btn btn-info btn-block">Join now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card plan-box text-center p-2">
+              <div class="card-body">
+                <div>
+                  <div class="icons-xl pt-4">
+                    <span class="uim-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-name="Layer 1"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          class="uim-primary"
+                          d="M17.73657 14.62189l-2.426 2.23065a11.60327 11.60327 0 0 1-4.29847 2.36987l.64368 3.00318a1.0003 1.0003 0 0 0 1.46924.66162l3.90527-2.20264a3.03526 3.03526 0 0 0 1.375-3.30371zM7.26562 8.77588L9.35431 6.296l-2.6048-.62848A2.77711 2.77711 0 0 0 3.36279 7.0249L1.1626 10.9248A.99989.99989 0 0 0 1.82422 12.394l3.07275.65869A12.88652 12.88652 0 0 1 7.26562 8.77588zM16.73373 8.81626a1.5 1.5 0 1 0-1.5-1.5A1.50055 1.50055 0 0 0 16.73373 8.81626z"
+                        ></path>
+                        <path
+                          class="uim-tertiary"
+                          d="M22.60107,2.062a1.00088,1.00088,0,0,0-.71289-.71289A11.24875,11.24875,0,0,0,10.46924,4.97217L7.26562,8.77588A12.93634,12.93634,0,0,0,4.3418,15.48682a1.00031,1.00031,0,0,0,.28466.83642l3.1001,3.1001a.99941.99941,0,0,0,.707.293c.02881,0,.05762-.00147.08692-.00391a11.84707,11.84707,0,0,0,6.79-2.85986l3.66308-3.36816A11.20387,11.20387,0,0,0,22.60107,2.062ZM16.7337,8.81622a1.5,1.5,0,1,1,1.5-1.5A1.50054,1.50054,0,0,1,16.7337,8.81622Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="mt-4">Premium</h4>
+
+                  <div class="plan-features text-muted mt-5">
+                    <p>
+                      Storage : <span class="text-info fw-semibold">20 GB</span>
+                    </p>
+                    <p>
+                      Bandwidth :
+                      <span class="text-info fw-semibold">800 GB</span>
+                    </p>
+                    <p>
+                      Domain : <span class="text-info fw-semibold">Yes</span>
+                    </p>
+                    <p>
+                      Support : <span class="text-info fw-semibold">Yes</span>
+                    </p>
+                  </div>
+
+                  <div class="mt-5">
+                    <h3>
+                      <sup><small>$</small></sup
+                      >29 / <span class="font-16 text-muted">Month</span>
+                    </h3>
+                    <div class="mt-4 mb-4 d-none">
+                      <a href="#" class="btn btn-info btn-block">Join now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card plan-box text-center p-2">
+              <div class="card-body">
+                <div>
+                  <div class="icons-xl pt-4">
+                    <span class="uim-svg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        data-name="Layer 1"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          class="uim-primary"
+                          d="M17.99847,8.06429,6.00266,8.109,5.72559,4.78353A3.00021,3.00021,0,0,1,8.16965,1.482L8.959,1.33871a17.03145,17.03145,0,0,1,6.08616.00066l.78593.1428a3.00013,3.00013,0,0,1,2.44334,3.30136Z"
+                        ></path>
+                        <path
+                          class="uim-quaternary"
+                          d="M6.00891,8.109a5.99407,5.99407,0,0,0,11.98444-.04474Z"
+                        ></path>
+                        <path
+                          class="uim-primary"
+                          d="M17.19806,13.3847v.00007l-4.491,4.491a.99963.99963,0,0,1-1.41406,0l-4.491-4.491V13.3847a9.945,9.945,0,0,0-4.736,7.44031,1.00012,1.00012,0,0,0,.99414,1.1084H20.93994a1.00012,1.00012,0,0,0,.99414-1.1084A9.945,9.945,0,0,0,17.19806,13.3847Z"
+                        ></path>
+                        <path
+                          class="uim-tertiary"
+                          d="M15.69067,12.65405a6.01193,6.01193,0,0,1-7.382-.00012,10.004,10.004,0,0,0-1.50671.73084l4.491,4.491a.99963.99963,0,0,0,1.41406,0l4.491-4.491a10.005,10.005,0,0,0-1.507-.731Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <h4 class="mt-4">Developer</h4>
+
+                  <div class="plan-features text-muted mt-5">
+                    <p>
+                      Storage : <span class="text-info fw-semibold">30 GB</span>
+                    </p>
+                    <p>
+                      Bandwidth :
+                      <span class="text-info fw-semibold">Unlimited</span>
+                    </p>
+                    <p>
+                      Domain : <span class="text-info fw-semibold">Yes</span>
+                    </p>
+                    <p>
+                      Support : <span class="text-info fw-semibold">Yes</span>
+                    </p>
+                  </div>
+
+                  <div class="mt-5">
+                    <h3>
+                      <sup><small>$</small></sup
+                      >39 / <span class="font-16 text-muted">Month</span>
+                    </h3>
+                    <div class="mt-4 mb-4 d-none">
+                      <a href="#" class="btn btn-info btn-block">Join now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end plans row -->
+
+        <!-- start faq -->
+        <div class="row mb-5 pb-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="mt-5 d-flex">
+              <div class="me-3">
+                <div
+                  class="avatar-title rounded-circle bg-soft-primary avatar-md text-primary"
+                >
+                  <i class="mdi mdi-help"></i>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="font-18 mt-1">
+                  Có hỗ trợ tìm việc làm cho các học viên?
+                </h5>
+                <p class="text-muted">
+                  Hiện tại học viện liên kết với các đối tác lớn, nhỏ tại Hà Nội
+                  trong lĩnh vực IT và Design. Vì thế, sau khi hoàn thành khóa
+                  học và đạt đủ điều kiện tốt nghiệp thì học viện sẽ hỗ trợ giới
+                  thiệu việc làm cho học viên.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 d-flex">
+              <div class="me-3">
+                <div
+                  class="avatar-title rounded-circle bg-soft-primary avatar-md text-primary"
+                >
+                  <i class="mdi mdi-help"></i>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="font-18 mt-1">Why do we use it ?</h5>
+                <p class="text-muted">
+                  For science, music, sport, etc, Europe uses the same
+                  vocabulary. The languages only differ in their grammar, their
+                  pronunciation and their most common words.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="mt-sm-5 mt-4 d-flex">
+              <div class="me-3">
+                <div
+                  class="avatar-title rounded-circle bg-soft-primary avatar-md text-primary"
+                >
+                  <i class="mdi mdi-help"></i>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="font-18 mt-1">
+                  Có phải ai cũng có thể trở thành lập trình viên?
+                </h5>
+                <p class="text-muted">
+                  Lập trình viên là nghề nghiệp nằm trong top hot, lương cao và
+                  nguồn cung nhân lực luôn gặp tình trạng báo động về. Vì thế,
+                  rất nhiều bạn lựa chọn Lập trình làm con đường phát triển sự
+                  nghiệp. Tuy nhiên, không phải ai cũng có thể trở thành lập
+                  trình viên. Bạn có khả năng tư duy logic tốt và có thiên hướng
+                  phát triển về kỹ thuật thì Green nghĩ là nghề lập trình viên
+                  sẽ phù hợp với bạn. Ngoài ra, để trở thành lập trình viên giỏi
+                  bạn cũng cần giỏi về ngoại ngữ, kỹ năng giao tiếp và đặc biệt
+                  là thái độ, trách nhiệm của bạn với công việc.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 d-flex">
+              <div class="me-3">
+                <div
+                  class="avatar-title rounded-circle bg-soft-primary avatar-md text-primary"
+                >
+                  <i class="mdi mdi-help"></i>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="font-18 mt-1">Where can I get some ?</h5>
+                <p class="text-muted">
+                  It will be as simple as in fact, it will be Occidental. To it
+                  will seem like simplified English as a skeptical
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end faq row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end pricing -->
+
+    <!-- Start contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card contact-section-card mb-0">
+              <div class="card-body p-md-5">
+                <div class="text-center title mb-5">
+                  <p class="text-muted text-uppercase fw-normal mb-2">
+                    Contact
+                  </p>
+                  <h3 class="mb-3">NHẬN THÔNG TIN TƯ VẤN</h3>
+                  <div class="title-icon position-relative">
+                    <div class="position-relative">
+                      <span class="uim-svg">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            class="uim-primary"
+                            d="M7.293,12.707l3.99969,3.9997a1.00354,1.00354,0,0,0,1.41468,0L16.707,12.707A.99989.99989,0,0,0,15.293,11.293L13,13.58594V8a1,1,0,0,0-2,0v5.58594L8.707,11.293A.99989.99989,0,0,0,7.293,12.707Z"
+                          ></path>
+                          <path
+                            class="uim-tertiary"
+                            d="M12,22A10,10,0,1,0,2,12,10.01114,10.01114,0,0,0,12,22ZM7.293,11.293a.99963.99963,0,0,1,1.41406,0L11,13.58594V8a1,1,0,0,1,2,0v5.58594l2.293-2.293A.99989.99989,0,0,1,16.707,12.707l-3.99969,3.9997a1.00354,1.00354,0,0,1-1.41468,0L7.293,12.707A.99962.99962,0,0,1,7.293,11.293Z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- start form -->
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="name"
+                          >Họ và tên <span class="text-danger">(*)</span></label
+                        >
+                        <input
+                          name="name"
+                          id="name"
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter your name..."
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="subject"
+                          >Số điện thoại
+                          <span class="text-danger">(*)</span></label
+                        >
+                        <input
+                          name="subject"
+                          id="phone"
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter Phone..."
+                          pattern="0([3]{1}|[5]{1}|[7]{1}|[9]{1}|[8]{1})?[0-9]{8}"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="email"
+                          >Email <span class="text-danger">(*)</span></label
+                        >
+                        <input
+                          name="email"
+                          id="email"
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter your email..."
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-3">
+                        <label class="form-label" for="address">Địa chỉ</label>
+                        <input
+                          name="address"
+                          id="address"
+                          type="text"
+                          class="form-control"
+                          placeholder="Enter Address..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="comments"
+                      >Yêu cần tư vấn
+                      <span class="text-danger">(*)</span></label
+                    >
+                    <textarea
+                      name="comments"
+                      id="comments"
+                      rows="4"
+                      class="form-control form-control-area"
+                      placeholder="Enter your message..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="d-flex justify-content-end align-items-center">
+                    <p id="error-msg" class="alert-msg me-3 mb-0">
+                      Tôi đã nhận thông tin của bạn. Tôi sẽ gửi thông tin đến
+                      bạn sớm nhất. Cảm ơn bạn đã đóng góp.!
+                    </p>
+                    <button type="submit" class="submitBnt btn btn-primary">
+                      Send message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+    <!-- start footer -->
+    <footer class="footer bg-dark text-white-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <a href="#" class="d-block mb-3">
+              <img src="images/logo-light.png" alt="" height="20" />
+            </a>
+            <p>Bootstrap 5 Landing Page Template</p>
+          </div>
+
+          <div class="col-lg-2 col-sm-6">
+            <div class="mt-4 mt-lg-0">
+              <h5 class="mb-4 font-18 text-white">Links</h5>
+              <ul class="list-unstyled footer-list-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="mt-4 mt-lg-0">
+              <h5 class="mb-4 font-18 text-white">Resources</h5>
+              <ul class="list-unstyled footer-list-menu">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="mt-4 mt-lg-0">
+              <h5 class="mb-4 font-18 text-white">Social</h5>
+              <ul class="list-inline social-icons-list">
+                <li class="list-inline-item">
+                  <a href="#"><i class="mdi mdi-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="mdi mdi-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="mdi mdi-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="mdi mdi-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- Start footer-alt -->
+    <section class="footer-alt py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center text-white-50">
+              <p class="mb-0">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © Peyso. Create by Themesdesign
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end footer-alt -->
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- unicons -->
+    <script src="https://unicons.iconscout.com/release/v2.1.11/script/monochrome/bundle.js"></script>
+
+    <!-- testi-slider -->
+    <script src="js/tiny-slider.js"></script>
+
+    <!-- app js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
