@@ -647,7 +647,7 @@ label {
 
 #aboutMember .team-thumb:hover .heading {
   top: -10px;
-  color: #e44c65;
+  color: #00B4D8;
 }
 #aboutMember .team-thumb .description {
   font-size: 18px;
@@ -1281,3 +1281,13 @@ label {
     height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
+
+.best-seller {
+  top: 1rem;
+  right: 1rem;
+  background: #f12d2d;
+  padding: 0 4px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
