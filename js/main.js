@@ -19,10 +19,9 @@ function submitForm(e) {
   const name = getInputVal('name');
   const email = getInputVal('email');
   const phone = getInputVal('phone');
-  const address = getInputVal('address');
   const lesson = getInputVal('lesson');
   const comments = getInputVal('comments');
-  messagesRef.push({ name, phone, email, address, lesson, comments});
+  messagesRef.push({ name, phone, email, lesson, comments});
   // Show alert
   document.querySelector('.alert-msg').style.display = 'block';
 
