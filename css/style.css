@@ -42,7 +42,7 @@ h6 {
 a {
   text-decoration: none !important;
   outline: none;
-  color: #8338EC;
+  color: #3b6195;
 }
 
 p {
@@ -69,7 +69,7 @@ hr {
   }
 }
 .bg-primary {
-  background-color: #8338EC !important;
+  background-color: #3b6195 !important;
 }
 
 .bg-soft-primary {
@@ -77,11 +77,11 @@ hr {
 }
 
 .text-primary {
-  color: #8338EC !important;
+  color: #3b6195 !important;
 }
 
 .uim-icon-primary .uim-svg {
-  fill: #8338EC !important;
+  fill: #3b6195 !important;
 }
 
 .bg-success {
@@ -235,8 +235,8 @@ hr {
   box-shadow: none;
 }
 .form-check .form-check-input:checked {
-  background-color: #8338EC;
-  border-color: #8338EC;
+  background-color: #3b6195;
+  border-color: #3b6195;
 }
 .form-check .form-check-input:checked:focus {
   box-shadow: none !important;
@@ -310,7 +310,7 @@ hr {
 }
 
 .uim-svg {
-  fill: #8338EC !important;
+  fill: #3b6195 !important;
 }
 .uim-svg svg {
   width: 24px;
@@ -344,7 +344,7 @@ hr {
 
 .avatar-title {
   align-items: center;
-  background-color: #8338EC;
+  background-color: #3b6195;
   color: #ffffff;
   display: flex;
   font-weight: 500;
@@ -422,8 +422,8 @@ label {
 
 .btn-primary {
   color: #ffffff;
-  background: #8338EC;
-  border-color: #8338EC;
+  background: #3b6195;
+  border-color: #3b6195;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background: #7725ea;
@@ -432,8 +432,8 @@ label {
 }
 
 .btn-outline-primary {
-  color: #8338EC;
-  border-color: #8338EC;
+  color: #3b6195;
+  border-color: #3b6195;
 }
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active {
   background: #7725ea !important;
@@ -736,7 +736,7 @@ label {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   line-height: 26px;
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
   transition: all 0.3s;
   background-color: transparent !important;
   padding: 6px 10px;
@@ -744,7 +744,7 @@ label {
   font-weight: 600;
 }
 .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active, .navbar .navbar-nav .nav-item .nav-link:focus, .navbar .navbar-nav .nav-item .nav-link.active {
-  color: #ffffff;
+  color: #3b6195;
 }
 .navbar .navbar-btn {
   margin-left: 10px;
@@ -782,7 +782,7 @@ label {
   color: rgba(52, 58, 64, 0.8);
 }
 .nav-sticky.navbar .navbar-nav .nav-item .nav-link:hover, .nav-sticky.navbar .navbar-nav .nav-item .nav-link:active, .nav-sticky.navbar .navbar-nav .nav-item .nav-link:focus, .nav-sticky.navbar .navbar-nav .nav-item .nav-link.active {
-  color: #8338EC;
+  color: #3b6195;
 }
 
 .navbar-light {
@@ -799,7 +799,7 @@ label {
   color: rgba(52, 58, 64, 0.8);
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover, .navbar-light .navbar-nav .nav-item .nav-link:active, .navbar-light .navbar-nav .nav-item .nav-link:focus, .navbar-light .navbar-nav .nav-item .nav-link.active {
-  color: #8338EC;
+  color: #3b6195;
 }
 
 @media (max-width: 991px) {
@@ -822,7 +822,7 @@ label {
     color: rgba(52, 58, 64, 0.9);
   }
   .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active, .navbar .navbar-nav .nav-item .nav-link.active {
-    color: #8338EC;
+    color: #3b6195;
   }
   .navbar .navbar-btn {
     margin-left: 0px;
@@ -992,7 +992,7 @@ label {
   left: 0px;
   width: 40px;
   height: 2px;
-  background-color: #8338EC;
+  background-color: #3b6195;
 }
 
 .hero-5 {
@@ -1137,13 +1137,13 @@ label {
   border-radius: 50%;
   border: none;
   background-color: rgba(131, 56, 236, 0.2) !important;
-  color: #8338EC;
+  color: #3b6195;
   transition: all 0.3s;
   font-size: 18px;
 }
 .tns-outer .tns-controls button:focus, .tns-outer .tns-controls button:hover, .tns-outer .tns-controls button:active {
   outline: none;
-  background-color: #8338EC !important;
+  background-color: #3b6195 !important;
   color: #ffffff;
 }
 .tns-outer .tns-controls button.active button {
@@ -1167,10 +1167,10 @@ label {
 }
 .tns-outer .tns-nav button:focus, .tns-outer .tns-nav button:hover, .tns-outer .tns-nav button:active, .tns-outer .tns-nav button.active {
   outline: none;
-  background-color: #8338EC !important;
+  background-color: #3b6195 !important;
 }
 .tns-outer .tns-nav button.tns-nav-active {
-  background-color: #8338EC !important;
+  background-color: #3b6195 !important;
 }
 
 .client-images img {
@@ -1277,7 +1277,7 @@ label {
   border-radius: 50%;
 }
 .footer .social-icons-list li a:hover {
-  background-color: #8338EC;
+  background-color: #3b6195;
   color: #ffffff;
 }
 
